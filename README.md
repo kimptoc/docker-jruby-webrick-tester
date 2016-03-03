@@ -1,16 +1,13 @@
-# JRuby DRB tester
+# JRuby webrick/REXML 1.7.23/24 tester
 
-Uses OpenJDK 8 on Alpine Linux, via Docker.
-
-Build container
-
+If you run 'as-is'
 ```
 docker-compose build
-
+docker-compose up
 ```
 
-Use it
+Runs ok - 2 clients connect to the webservice, no issues
 
-```
-export runs=1000000 && docker-compose up
-```
+If you amend the docker-compose.yml - change 1.7.23 to 1.7.24 and run again.
+
+It will fail with an error.
